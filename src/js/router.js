@@ -7,5 +7,8 @@ export default function router() {
         case "/profile/register/":
             listeners.setRegisterFormListener()
             break; 
+        case "/profile/login/":
+            listeners.setLoginFormListener()
+            break;
     } 
 }

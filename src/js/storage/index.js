@@ -10,6 +10,7 @@
  * // expect local storage to show: username "JohnDoe"
  * ``` 
  */
+
 export function save(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
 }
@@ -19,6 +20,7 @@ export function save(key, value) {
  * @param {string} key 
  * @returns - The loaded value, or null if the value is not found
  */
+
 export function load(key) {
     try {
         const value = localStorage.getItem(key);
@@ -32,6 +34,7 @@ export function load(key) {
  * This function removes the value from local storage
  * @param {string} key 
  */
+
 export function remove(key) {
     localStorage.removeItem(key);
 }

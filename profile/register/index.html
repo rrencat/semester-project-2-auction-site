@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/index.css" />
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/src/js/index.js" type="module" defer></script>
+    <title>Auction by Noroff | Register</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="../../more/images/logo_white.png" alt="Auctions by Noroff logo" height="90" width="auto">
+              </a>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="/profile/login/">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Register</a>
+                </li>
+              </ul>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                  <div id="message"></div>
+                    <form id="registerForm">
+                        <div class="form-group mb-3">
+                            <label for="">Name *</label>
+                            <input class="form-control" type="text" name="name" required pattern="^[\w]+$" maxlength="20" title="Username must only contain lowercase and uppercase letters, numbers and underscore(_). Example: User_123">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="">Email *</label>
+                            <input class="form-control" type="email" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="The email must be a valid stud.noroff.no email address to register.">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="">Password *</label>
+                            <input class="form-control" type="password" name="password" required minlength="8">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="">Avatar</label>
+                            <input class="form-control" type="url" name="avatar">
+                        </div>
+
+                        <button class="btn btn-primary">Register</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

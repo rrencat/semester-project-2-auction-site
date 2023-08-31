@@ -11858,4 +11858,12 @@ body {
   background-color: #212529;
 }
 
+label {
+  color: white;
+}
+
+ul li a {
+  color: white;
+}
+
 /*# sourceMappingURL=index.css.map */

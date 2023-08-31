@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/index.css" />
     <script src="/src/js/index.js" type="module" defer></script>
-    <title>Auction by Noroff | Login</title>
+    <title>Auction by Noroff | Edit Profile</title>
 </head>
 <body>
     <header>
@@ -15,11 +15,17 @@
               </a>
               <ul class="nav justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Login</a>
+                  <a class="nav-link" href="/">Auction</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/profile/register/">Register</a>
+                    <a class="nav-link" href="/profile/">Profile</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Edit Profile</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                  </li>
               </ul>
         </nav>
     </header>
@@ -27,17 +33,20 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
-                  <div id="message"></div>
-                    <form id="loginForm">
+                    <form id="editProfile">
                         <div class="form-group mb-3">
-                            <label>Email *</label>
-                            <input class="form-control" type="email" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="The email must be a valid stud.noroff.no email address to register.">
+                            <label for="">Name</label>
+                            <input class="form-control" type="text" name="name" disabled>
                         </div>
                         <div class="form-group mb-3">
-                            <label>Password *</label>
-                            <input class="form-control" type="password" name="password" required minlength="8">
+                            <label for="">Email</label>
+                            <input class="form-control" type="text" name="email" disabled>
                         </div>
-                        <button class="btn btn-primary">Login</button>
+                        <div class="form-group mb-3">
+                            <label for="">Avatar</label>
+                            <input class="form-control" type="url" name="avatar">
+                        </div>
+                        <button class="btn btn-primary">Update Avatar</button>
                     </form>
                 </div>
             </div>

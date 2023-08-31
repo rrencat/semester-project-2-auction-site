@@ -1,4 +1,4 @@
-import { load } from "../storage.js"; 
+import { load } from "../storage/index.js";
 
 /**
  * This function makes an authenticated request to the API

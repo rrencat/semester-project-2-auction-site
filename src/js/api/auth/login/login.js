@@ -1,4 +1,4 @@
-import { API_SOCIAL_URL } from "../constants.js";
+import { API_SOCIAL_URL } from "../../constants.js";
 
 const action = "/auth/login";
 const method = "post";

@@ -2,10 +2,22 @@
     padding: 0;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 body {
     background-color: #212529;
 }
 
 h1 {
     color: white;
+}
+
+label {
+    color: white;
+}
+
+.text-muted {
+    color: #86929d;
 }

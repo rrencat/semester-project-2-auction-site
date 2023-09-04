@@ -7,26 +7,28 @@ export default function buildMenu(pathname) {
 	if (isLoggedIn()) {
 		const name = getName();
 
-		menu.innerHTML += `<li class="nav-item">
-                        <a class="nav-link ${pathname === "/" || pathname === "/index.html" ? "active" : ""}" href="/">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ${pathname === "/profile/" ? "active" : ""}" href="/profile">Profile</a>
-                      </li>
-                      <li class="nav-item">
-                        <button class="btn btn-primary" id="logout">Log out ${name}</button>
-                      </li>`;
+		menu.innerHTML += `
+                        <li class="nav-item">
+                          <a class="nav-link ${pathname === "/" || pathname === "/index.html" ? "active" : ""}" href="/">Auction</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link ${pathname === "/profile/" ? "active" : ""}" href="/profile">${name}</a>
+                        </li>
+                        <li class="nav-item">
+                          <button class="btn btn-primary" id="logout">Log out</button>
+                        </li>
+                      `;
 
 		handlers.logoutListener();
 	} else {
-		menu.innerHTML += `<li class="nav-item">
-                        <a class="nav-link ${pathname === "/" || pathname === "/index.html" ? "active" : ""}" href="/">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ${pathname === "/profile/login" ? "active" : ""}" href="/profile/login">Login</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ${pathname === "/profile/register" ? "active" : ""}" href="/profile/register">Register</a>
-                      </li>`;
+		menu.innerHTML += `
+                        
+                        <li class="nav-item">
+                          <a class="nav-link ${pathname === "/profile/login" ? "active" : ""}" href="/profile/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link ${pathname === "/profile/register" ? "active" : ""}" href="/profile/register">Register</a>
+                        </li>
+                      `;
 	}
 }

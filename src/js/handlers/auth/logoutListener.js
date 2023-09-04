@@ -7,9 +7,6 @@ export function logoutListener() {
         storage.remove("token");
         storage.remove("name");
         storage.remove("profile");
-    });
-
-    if (logoutListener.ok) {
         window.location = "/";
-    }
+    });
 }

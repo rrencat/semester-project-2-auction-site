@@ -1,4 +1,4 @@
-import { API_SOCIAL_URL } from "../../constants.js";
+import { API_AUCTION_URL } from "../../constants.js";
 
 const action = "/auth/register";
 const method = "post";
@@ -10,7 +10,7 @@ const method = "post";
  */
 
 export async function register(profile) {
-    const registerURL = API_SOCIAL_URL + action;
+    const registerURL = API_AUCTION_URL + action;
     const body = JSON.stringify(profile);
 
     const response = await fetch(registerURL, {

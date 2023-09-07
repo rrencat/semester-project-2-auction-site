@@ -1,5 +1,5 @@
 import * as api from "../api/profiles/index.js";
-import { displayMessage } from "../ui/common/displayMessage.js";
+import displayMessage from "../ui/common/displayMessage.js";
 import renderProfile from "../templates/profile/profile.js";
 
 export async function displayProfile() {

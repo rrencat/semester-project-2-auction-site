@@ -1,6 +1,7 @@
 import router from "./router.js";
 
-//import { getListings } from "./api/listings/read.js";
+import { createListing } from "./api/listings/create.js";
+createListing();
 
-//getListings();
+
 router();

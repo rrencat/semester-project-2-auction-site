@@ -1,5 +1,5 @@
 import { register } from "../../api/auth/register/register.js"; 
-import { displayMessage } from "../../ui/common/displayMessage.js";
+import displayMessage from "../../ui/common/displayMessage.js";
 
 /**
  * This function handles the listener for the registration form and displays a message if the user successfully registered

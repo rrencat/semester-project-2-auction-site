@@ -1,5 +1,5 @@
 import * as api from "../api/listings/index.js";
-import { displayMessage } from "../ui/common/displayMessage.js";
+import displayMessage from "../ui/common/displayMessage.js";
 import renderListings from "../templates/listings/listings.js";
 
 export async function displayListings() {

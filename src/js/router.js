@@ -1,4 +1,4 @@
-import * as handlers from "./listeners/index.js";
+import * as listeners from "./listeners/index.js";
 import buildMenu from "./ui/common/buildMenu.js";
 import { redirectBasedOnLogin } from "./helpers/auth/redirectBasedOnLogin.js";
 import { displayProfile } from "./view/profile.js";
@@ -18,17 +18,17 @@ export default function router() {
             displayListings()
             break;
         case "/profile/register/":
-            handlers.setRegisterFormListener()
+            listeners.setRegisterFormListener()
             break; 
         case "/profile/login/":
-            handlers.setLoginFormListener()
+            listeners.setLoginFormListener()
             break;
         case "/profile/":
             displayProfile();
-            handlers.logoutListener()
+            listeners.logoutListener()
             break;
         case "/listings/add/":
-            handlers.setCreateListingListener()
+            listeners.setCreateListingListener()
             break;
     } 
 }

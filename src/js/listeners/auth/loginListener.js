@@ -1,5 +1,5 @@
 import { login } from "../../api/auth/login/login.js"; 
-import { displayMessage } from "../../ui/common/displayMessage.js";
+import displayMessage from "../../ui/common/displayMessage.js";
 import * as storage from "../../services/storage.js";
 
 /**

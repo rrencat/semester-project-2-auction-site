@@ -1,5 +1,5 @@
 import { isLoggedIn, getName } from "../../helpers/storage/index.js";
-import * as handlers from "../../handlers/index.js";
+import * as handlers from "../../listeners/index.js";
 
 export default function buildMenu(pathname) {
 	const menu = document.querySelector("#menu");
@@ -13,6 +13,8 @@ export default function buildMenu(pathname) {
                         <li class="nav-item">
                           <a class="nav-link ${pathname === "/profile/" ? "active" : ""}" href="/profile">${name}</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" ${pathname === "/listings/add" ? "active" : ""}" href="/listings/add">Add Listing</a>
                         <li class="nav-item">
                           <button class="btn btn-primary" id="logout">Log out</button>
                         </li>`;

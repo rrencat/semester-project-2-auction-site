@@ -1,5 +1,5 @@
-import { getListings } from "../../api/listings/index.js";
-import { displayMessage } from "../../ui/common/displayMessage.js";
+import { createListing } from "../../api/listings/create.js";
+import displayMessage from "../../ui/common/displayMessage.js";
 
 export function setCreateListingListener() {
     const form = document.querySelector("#createListing");
@@ -12,19 +12,20 @@ export function setCreateListingListener() {
 
             try {
                 const title = formData.get("title");
-                const body = formData.get("body");
+                const description = formData.get("description");
+                const endsAt = formData.get("endsAt");
                 const tags = formData.get("tags");
                 const media = formData.get("media");
     
                 const listing = {
                     title: title,
-                    body: body,
+                    body: description, endsAt
                 };
     
                 listing.tags = [tags];
                 listing.media = [media];
     
-                getListings();
+                createListing();
                 displayMessage("success", "you have successfully created a listing", "#message")
             } catch (error) {
                 console.log(error);

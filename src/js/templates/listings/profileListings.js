@@ -6,7 +6,10 @@ function creatProfileListings(profileListing) {
     span.innerText = profileListing.title;
     div.append(span);
 
-    //I would like to display the image here
+    const image = document.createElement("img");
+    image.src = profileListing.media[0] ?? "https://picsum.photos/200";
+    image.alt = profileListing.title;
+    div.append(image);
 
     const description = document.createElement("span");
     description.innerText = profileListing.description;

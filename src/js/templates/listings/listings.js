@@ -21,7 +21,7 @@ function createListings(listing) {
     endsAt.innerText = listing.endsAt;
     div.append(endsAt);
 
-    if (isLoggedIn === true) {
+    if (isLoggedIn() === true) {
         const bids = document.createElement("span");
         bids.innerText = listing._count.bids;
         div.append(bids);
@@ -30,7 +30,7 @@ function createListings(listing) {
         bidButton.classList.add("btn");
         bidButton.classList.add("btn-outline-primary");
         bidButton.classList.add("mb-2");
-        bidButton.innerText = "Bid";
+        bidButton.innerText = "Place bid";
         div.append(bidButton);
     }
     

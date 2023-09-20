@@ -6,7 +6,6 @@ export async function displayListings() {
     try {
         const profile = await api.getListings();
         renderListings(profile);
-        console.log(profile);
     } catch (error) {
         console.log(error);
         displayMessage("danger", error, "#listingsContainer");

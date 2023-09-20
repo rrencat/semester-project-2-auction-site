@@ -5,7 +5,7 @@ function createListings(listing) {
     div.classList.add("card");
 
     const title = document.createElement("span");
-    title.innerText = listing.title;
+    title.innerHTML = `<strong>${listing.title}</strong>`;
     div.append(title);
 
     const image = document.createElement("img");
@@ -18,12 +18,12 @@ function createListings(listing) {
     div.append(description);
 
     const endsAt = document.createElement("span");
-    endsAt.innerText = listing.endsAt;
+    endsAt.innerHTML = `<strong>Ends at:</strong> ${listing.endsAt}`;
     div.append(endsAt);
 
     if (isLoggedIn() === true) {
         const bids = document.createElement("span");
-        bids.innerText = listing._count.bids;
+        bids.innerHTML = `<strong>Current bids:</strong> ${listing._count.bids}`;
         div.append(bids);
 
         const bidButton = document.createElement("button");

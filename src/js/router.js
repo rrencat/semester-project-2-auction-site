@@ -14,7 +14,7 @@ export default function router() {
 
     switch (pathname) {
         case "/":
-        case "index.html":
+        case "/index.html":
             displayListings()
             break;
         case "/profile/register/":

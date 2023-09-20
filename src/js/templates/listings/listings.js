@@ -4,9 +4,9 @@ function createListings(listing) {
     const div = document.createElement("div");
     div.classList.add("card");
 
-    const span = document.createElement("span");
-    span.innerText = listing.title;
-    div.append(span);
+    const title = document.createElement("span");
+    title.innerText = listing.title;
+    div.append(title);
 
     const image = document.createElement("img");
     image.src = listing.media[0] ?? "https://picsum.photos/200";

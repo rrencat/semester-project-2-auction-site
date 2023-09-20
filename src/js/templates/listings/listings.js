@@ -8,7 +8,10 @@ function createListings(listing) {
     span.innerText = listing.title;
     div.append(span);
 
-    //I would like to display the image here
+    const image = document.createElement("img");
+    image.src = listing.media[0] ?? "https://picsum.photos/200";
+    image.alt = listing.title;
+    div.append(image);
 
     const description = document.createElement("span");
     description.innerText = listing.description;

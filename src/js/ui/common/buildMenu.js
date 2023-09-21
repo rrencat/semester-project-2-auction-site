@@ -16,7 +16,7 @@ export default function buildMenu(pathname) {
                         <li class="nav-item">
                           <a class="nav-link ${pathname === "/listings/add" || pathname === "/listings/add/index.html" ? "active" : ""}" href="/listings/add">Add Listing</a>
                         <li class="nav-item">
-                          <button class="btn btn-primary" id="logout">Log out</button>
+                          <button class="btn btn-secondary" id="logout">Log out</button>
                         </li>`;
 
 		handlers.logoutListener();

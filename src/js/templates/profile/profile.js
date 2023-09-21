@@ -1,6 +1,7 @@
 function creatProfile(profile) {
     const div = document.createElement("div");
     div.classList.add("card");
+    div.classList.add("profileCard");
 
     const avatar = document.createElement("img");
     avatar.classList.add("avatarPhoto");
@@ -19,6 +20,7 @@ function creatProfile(profile) {
     editAvatar.classList.add("btn");
     editAvatar.classList.add("btn-outline-primary");
     editAvatar.classList.add("mb-2");
+    editAvatar.href = "/profile/edit/";
     editAvatar.innerText = "Edit Avatar";
     div.append(editAvatar);
 

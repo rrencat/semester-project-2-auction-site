@@ -9,7 +9,7 @@ When a new user joins the website, they are given 1000 credits to use on the sit
 
 ## Description
 
-Using provided NorOff API and API documentation, I have been tasked to create a functioning user interface that allows for viewing, adding and bidding on different auctions.
+Using provided NorOff API and API documentation, I have been tasked to create a website for an auction house which allows registered users to view, add and bid on different items. And to allow not registered users to view the items currently up for auction.
 
 JWT was used to get access token which then was stored in local storage.
 
@@ -19,6 +19,7 @@ Javascript functions description was made using JSDocs.
 
 - HTML
 - CSS
+- Bootstrap
 - Sass
 - JavaScript
 - [NorOff API](https://docs.noroff.dev/)

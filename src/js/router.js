@@ -29,11 +29,5 @@ export default function router() {
             displayProfile();
             listeners.logoutListener()
             break;
-        case "/listings/add/":
-            listeners.setCreateListingListener()
-            break;
-        case "/profile/edit/":
-            listeners.setUpdateAvatarListener()
-            break;
     } 
 }

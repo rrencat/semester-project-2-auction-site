@@ -1,0 +1,23 @@
+{
+  "name": "semester-project-2-auction-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css", 
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "keywords": [],
+  "author": "Renate Rasmussen",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "prettier": "^3.0.2"
+  }
+}

@@ -14,7 +14,7 @@ export default function buildMenu(pathname) {
                           <a class="nav-link ${pathname === "/profile/" ? "active" : ""}" href="/profile">${name}</a>
                         </li>
                         <li class="nav-item">
-                          <button class="btn btn-secondary" id="logout">Log out</button>
+                          <button class="btn btn-outline-primary" id="logout">Log out</button>
                         </li>`;
 
 		handlers.logoutListener();

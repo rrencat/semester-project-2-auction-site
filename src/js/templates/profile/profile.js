@@ -16,14 +16,6 @@ function creatProfile(profile) {
     credits.innerHTML = `<strong>Credits:</strong> ${profile.credits}`;
     div.append(credits);
 
-    const editAvatar = document.createElement("button");
-    editAvatar.classList.add("btn");
-    editAvatar.classList.add("btn-outline-primary");
-    editAvatar.classList.add("mb-2");
-    editAvatar.href = "/profile/edit/";
-    editAvatar.innerText = "Edit Avatar";
-    div.append(editAvatar);
-
     return div;
 }
 

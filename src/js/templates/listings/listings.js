@@ -25,13 +25,6 @@ function createListings(listing) {
         const bids = document.createElement("span");
         bids.innerHTML = `<strong>Current bids:</strong> ${listing._count.bids}`;
         div.append(bids);
-
-        const bidButton = document.createElement("button");
-        bidButton.classList.add("btn");
-        bidButton.classList.add("btn-outline-primary");
-        bidButton.classList.add("mb-2");
-        bidButton.innerText = "Place bid";
-        div.append(bidButton);
     }
     
     return div;

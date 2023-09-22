@@ -2,6 +2,9 @@ import { search } from "../../api/listings/search.js";
 import displaySearchResults from "../../ui/listings/displaySearchResults.js";
 import hideSearchResults from "../../ui/listings/hideSearchResults.js";
 
+/**
+ * This function handles the listener for searching
+ */
 export default function searchListener() {
     const input = document.querySelector("#search");
 

@@ -27,7 +27,7 @@ Javascript functions description was made using JSDocs.
 - HTML
 - CSS
 - Bootstrap
-- Sass
+- SCSS
 - JavaScript
 - [NorOff API](https://docs.noroff.dev/)
 

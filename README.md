@@ -3,7 +3,7 @@
 ![image](https://github.com/rrencat/semester-project-2-auction-site/assets/104782737/f252a80b-49b3-4483-b100-ab700f0bea29)
 
 
-![Project plan in Trello]([https://trello.com/invite/b/IiYfKAsm/ATTIee7157dd1f9617e65a72ab4292a95c7f69986830/js2-ca](https://trello.com/b/Es8tFlH5/semester-project-2-auction-site))
+[Project plan in Trello](https://trello.com/b/Es8tFlH5/semester-project-2-auction-site)
 
 
 
